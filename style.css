@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #007BFF;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  .timeline-item {
+    padding: 20px;
+    position: relative;
+    width: 50%;
+    left: 50%;
+    margin-bottom: 20px;
+    clear: both;
+  }
+  
+  .timeline-item-left{
+    padding: 20px;
+    position: relative;
+    width: 50%;
+    left: -6%;
+    margin-bottom: 20px;
+    clear: both;
+  }
+  
+  .timeline-item:nth-child(odd) {
+    left: 0;
+  }
+  
+  .timeline-icon {
+    position: absolute;
+    top: 15px;
+    left: -30px;
+    background-color: #fff;
+    border: 3px solid #007BFF;
+    border-radius: 50%;
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .timeline-icon-right {
+    position: absolute;
+    top: 15px;
+    right: -30px;
+    background-color: #fff;
+    z-index: 10;
+    border: 3px solid #007BFF;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .timeline-content {
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline-content-box-left {
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+    /* margin-right: 2px; */
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline-content h3 {
+    margin-top: 0;
+    color: #007BFF;
+  }
+  
+  .timeline-content p {
+    margin: 10px 0;
+  }
+  
+  .timeline-date {
+    position: absolute;
+    top: 20px;
+    right: -100px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  .timeline-icon, .timeline-icon-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: 3px solid #007BFF;
+    border-radius: 50%;
+    width: 40px; /* Adjusted size */
+    height: 40px; /* Adjusted size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  .timeline-icon {
+    left: -20px; /* Adjusted position */
+  }
+  
+  .timeline-icon-right {
+    right: -20px; /* Adjusted position */
+  }
+  
+  .icon {
+    width: 20px; /* Adjusted size */
+    height: 20px; /* Adjusted size */
+    color: #007BFF;
+  }
